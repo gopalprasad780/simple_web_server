@@ -36,7 +36,7 @@ class GetHandler(BaseHTTPRequestHandler):
 
 if __name__=='__main__':
     from BaseHTTPServer import HTTPServer
-    server = HTTPServer(('https://simpleserverpython.herokuapp.com/',8080), GetHandler)
+    server = HTTPServer(('https://simpleserverpython.herokuapp.com/'), GetHandler)
     print 'Starting server, use <Ctrl-C> to stop'
     server.serve_forever()
 
